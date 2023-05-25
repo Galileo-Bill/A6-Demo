@@ -44,7 +44,7 @@ public class LoginStepDefinitions {
 
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		loginPage = new LoginPage(driver);
 	}
 
