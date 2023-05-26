@@ -2,13 +2,18 @@ SE754
 
 Demo SpringBoot + JSP + Cucumber + Selenium
 
-Requires Gradle 7.0
+
+JDK 17 requires Gradle 7.0
 
 at `gradle/wrapper/gradle-wrapper.properties`
 you should have
 `distributionUrl=https\://services.gradle.org/distributions/gradle-7.0-all.zip`
 
-Tested with JDK 17
+JDK 19 requires Gradle 7.6
+
+at `gradle/wrapper/gradle-wrapper.properties`
+you should have
+`distributionUrl=https\://services.gradle.org/distributions/gradle-7.6-all.zip`
 
 Make sure you have the right driver for your browser under webdrivers fodler
 
