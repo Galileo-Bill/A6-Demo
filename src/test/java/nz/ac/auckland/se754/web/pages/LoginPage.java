@@ -21,6 +21,9 @@ public class LoginPage {
     @FindBy(how=How.ID, using="submitbtn")
     private WebElement submitButton;
 
+    @FindBy(how=How.ID, using="resetbtn")
+    private WebElement resetButton;
+
     @FindBy(how=How.ID, using="message")
     private WebElement message;
 
@@ -40,6 +43,6 @@ public class LoginPage {
         return this.message.getText();
     }
 
-
+    public void clickResetPassword() {this.resetButton.click();}
 }
 

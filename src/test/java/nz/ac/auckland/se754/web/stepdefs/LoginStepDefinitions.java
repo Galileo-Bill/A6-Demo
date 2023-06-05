@@ -91,4 +91,14 @@ public class LoginStepDefinitions {
 		assertTrue(loginPage.getMessage().contains("Welcome user1"));
 	}
 
+	@When("I press the reset password button")
+	public void i_press_the_reset_password_button() {
+		loginPage.clickResetPassword();
+	}
+
+	@Then("I should see the password reset page")
+	public void i_should_see_the_password_reset_page() {
+		assertTrue(loginPage.getMessage().contains("A password reset link has been sent to your email."));
+	}
+
 }

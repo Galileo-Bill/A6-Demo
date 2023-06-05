@@ -12,6 +12,7 @@
 		Name : <input type="text" name="name" id="name" />
 		Password : <input type="password" name="password" id="password"/>
 		<input type="submit" id="submitbtn" />
+		<button type="submit" formaction="/reset-password" id="resetbtn">Reset Password</button>
 	</form>
 </body>
 
