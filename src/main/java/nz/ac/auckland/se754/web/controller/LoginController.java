@@ -41,4 +41,13 @@ public class LoginController {
 		return "welcome";
 	}
 
+	@RequestMapping(value="/reset-password", method = RequestMethod.POST)
+	public String resetPassword(ModelMap model, @RequestParam String name){
+		PasswordResetService mockService = Mockito.mock(PasswordResetService.class);
+		Mockito.doNothing().when(mockService).resetPassword(name);
+		mockService.resetPassword(name);
+		model.put("errorMessage", "A password reset link has been sent to your email.");
+		return "reset";
+	}
+
 }
